@@ -1,0 +1,212 @@
+*, *:before, *::after {
+  box-sizing: border-box;
+  font-family: Roboto, Arial;
+}
+
+body {
+  margin: 0;
+}
+
+/********************************************************************************************/
+/*****************************/ /********** HEADER **********/ /*****************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.youtube-logo {
+  height: 80px;
+}
+
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 2rem 0 4rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: .4rem;
+  padding-left: 1rem;
+  font-size: inherit;
+  border: 1px solid #777;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem;
+  border: 1px solid #777;
+  background-color: #f8f8f8;
+  border-left: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+}
+  .search-btn:hover {
+    background-color: #f0f0f0;
+  }
+
+.menu-icons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu-channel-icon {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #aaa;
+}
+
+/********************************************************************************************/
+/***************************/ /********** CATEGORIES **********/ /***************************/
+.categories {
+  padding: 1rem 2rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.category-section {
+  display: flex;
+  overflow: hidden;
+}
+
+.category {
+  padding: .5rem 1rem;
+  margin-right :1rem;
+  font-size: inherit;
+  word-wrap: none;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  border-radius: 900px;
+  background-color: #e7e7e7;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+  .category:hover {
+    background-color: #ddd;
+  }
+
+  .category.active {
+    border-color: #eee;
+    background-color: #606060;
+    color: white;
+  }
+
+  .category:last-child {
+    margin-right: 0;
+  }
+
+/********************************************************************************************/
+/*****************************/ /********** VIDEOS **********/ /*****************************/
+.videos {
+  background-color: #f9f9f9;
+}
+
+.video-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 3rem 1rem;
+  padding: 3rem 0;
+  margin: 0 1.5rem;
+  border-top: 4px solid #ccc;
+}
+  .video-section:first-child {
+    border-top: none;
+  }
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
+  position: relative;
+  display: flex;
+}
+
+.thumbnail::before {
+  content: attr(data-duration);
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: .1em .3em;
+  font-size: .9rem;
+  border-radius: .3em;
+  color: white;
+  background-color: rgba(0, 0, 0, .85);
+}
+
+.thumbnail-image {
+  width: 100%;
+  min-width: 250px;
+  height: 100%;
+  min-height: 150px;
+  border-radius: 10px;
+  background-color: #aaa;
+}
+
+.video-bottom-section {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.channel-icon{
+  width: 36px;
+  height: 36px;
+  margin-right: .75rem;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  margin-bottom: .5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(24, 23, 23);
+}
+
+.video-channel-name {
+  margin-bottom: .1rem;
+  text-decoration: none;
+  transition: color 150ms;
+}
+  .video-channel-name:hover {
+    color: #111;
+  }
+
+.video-channel-name, .video-metadata {
+  color: #555;
+}
+
+.video-section-title {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -.5rem 0;
+  padding: 0 .5rem;
+}
+
+.video-section-title-close {
+  padding: 0;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  color: #555;
+  cursor: pointer;
+}

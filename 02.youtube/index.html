@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube Clone</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <a href="#"><img src="images/logo.png" alt="Youtube Logo" class="youtube-logo" /></a>
+
+    <form class="search-bar">
+      <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+      <button class="search-btn" type="submit">
+        <img src="images/magnify.svg" />
+      </button>
+    </form><!--search-bar-->
+
+    <div class="menu-icons">
+      <a href="#"><img src="images/video-plus.svg" alt="Upload Video" /></a>
+      <a href="#"><img src="images/apps.svg" alt="Apps" /></a>
+      <a href="#"><img src="images/bell.svg" alt="Notificatios" /></a>
+      <a href="#"><img class="menu-channel-icon" src="https://lh3.googleusercontent.com/a/AEdFTp6q_kYaiJCtjuV_0AB9yEVxXw4qNvqVhjLcUbxTRQ=s192-c-rg-br100" alt="Your Channel" /></a>
+    </div><!--menu-icons-->
+  </header>
+
+  <div class="categories">
+    <section class="category-section">
+      <button class="category active">Tudo</button>
+      <button class="category">Games</button>
+      <button class="category">Programação</button>
+      <button class="category">Música</button>
+      <button class="category">Documentários</button>
+      <button class="category">Filmes</button>
+      <button class="category">LiveStreams</button>
+      <button class="category">Desenhos</button>
+      <button class="category">Vlogs</button>
+      <button class="category">Outros</button>
+    </section><!--category-section-->
+  </div><!--categories-->
+
+  <div class="videos">
+    <section class="video-section">
+      <article class="video-container">
+        <a href="https://www.youtube.com/watch?v=vA7DyyWpvgk&t=380s" class="thumbnail" data-duration="1:20:06">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/vA7DyyWpvgk/maxresdefault.jpg" alt="" />
+        </a>
+
+        <div class="video-bottom-section">
+          <a href="https://www.youtube.com/@GEMAPLYS"><img class="channel-icon" src="https://yt3.ggpht.com/ytc/AMLnZu8Ba0PigDbPLwiCPRPcTld2mm0xsFeSulRA3kA2MA=s176-c-k-c0x00ffffff-no-rj" alt="video" /></a>
+
+          <div class="video-details">
+            <a href="https://www.youtube.com/watch?v=vA7DyyWpvgk&t=380s" class="video-title">castlevania - a sinfonia das reviews</a>
+            <a href="https://www.youtube.com/@GEMAPLYS" class="video-channel-name">GEMAPLYS</a>
+
+            <div class="video-metadata">
+              <span>3,3 mi de vizualizações</span>
+              <span>•</span>
+              <span>há 1 ano</span>
+            </div><!--video-metadata-->
+          </div><!--video-details-->
+        </div><!--video-bottom-section-->  
+      </article><!--video-container-->
+
+      <article class="video-container">
+        <a href="https://www.youtube.com/watch?v=T9wEvX-yXvg&list=PLiVcPy8Azk-AguLiq6LZjRBRDZh_ogQSA&index=1" class="thumbnail" data-duration="31:12">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/T9wEvX-yXvg/maxresdefault.jpg" alt="" />
+        </a>
+
+        <div class="video-bottom-section">
+          <a href="https://www.youtube.com/@NerdAllStars">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AMLnZu9KcfNhcuyXcN2HGlWvyAt06THwDfjG4i7hJ3CGWA=s176-c-k-c0x00ffffff-no-rj" alt="video" />
+          </a>
+
+          <div class="video-details">
+            <a href="https://www.youtube.com/watch?v=T9wEvX-yXvg&list=PLiVcPy8Azk-AguLiq6LZjRBRDZh_ogQSA&index=1" class="video-title">INJUSTIÇA: DEUSES ENTRE NÓS (ANO 1) - História Completa</a>
+            <a href="https://www.youtube.com/@NerdAllStars" class="video-channel-name">Nerd All Stars</a>
+
+            <div class="video-metadata">
+              <span>293 mil visualizações</span>
+              <span>•</span>
+              <span>há 2 anos</span>
+            </div><!--video-metadata-->
+          </div><!--video-details-->
+        </div><!--video-bottom-section-->  
+      </article><!--video-container-->
+
+      <article class="video-container">
+        <a href="https://www.youtube.com/watch?v=HCz0DkLKe9M&t=5s" class="thumbnail" data-duration="9:13">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/HCz0DkLKe9M/maxresdefault.jpg" alt="" />
+        </a>
+
+        <div class="video-bottom-section">
+          <a href="https://www.youtube.com/@canaldojosh"><img class="channel-icon" src="https://yt3.ggpht.com/ytc/AMLnZu8LVBYo5qXu6IIAONQPK5WjMJxK0LUUlA3fTv2A=s88-c-k-c0x00ffffff-no-rj" alt="video" /></a>
+
+          <div class="video-details">
+            <a href="https://www.youtube.com/watch?v=HCz0DkLKe9M&t=5s" class="video-title">RICK AND MORTY EPISÓDIO 1 TEMPORADA 5 | O melhor começo...</a>
+            <a href="https://www.youtube.com/@canaldojosh" class="video-channel-name">Canal do Josh</a>
+
+            <div class="video-metadata">
+              <span>2,9 mil vizualizações</span>
+              <span>•</span>
+              <span>há 1 ano</span>
+            </div><!--video-metadata-->
+          </div><!--video-details-->
+        </div><!--video-bottom-section-->  
+      </article><!--video-container-->
+
+      <article class="video-container">
+        <a href="https://youtu.be/r_cbh4-SOmI" class="thumbnail" data-duration="3:27">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/cKaBQtDC_XE/maxresdefault.jpg" alt="" />
+        </a>
+
+        <div class="video-bottom-section">
+          <a href="https://www.youtube.com/@OficialHungria"><img class="channel-icon" src="https://yt3.ggpht.com/aKcyRPYQ6fFEHtMVMbPvSpsvkw6MxbPGWkJLSdEK7uvp1XgY1uoI_wV46F2uNvnUXxGcSRD7=s88-c-k-c0x00ffffff-no-nd-rj" alt="video" /></a>
+
+          <div class="video-details">
+            <a href="https://youtu.be/r_cbh4-SOmI" class="video-title">Hungria Hip Hop - Um Pedido (Official Music Video)</a>
+            <a href="https://www.youtube.com/channel/UCAI8SmRbXgSpP8Zo3xZbxzQ" class="video-channel-name">Hungria Hip Hop</a>
+
+            <div class="video-metadata">
+              <span>172 mi de visualizações</span>
+              <span>•</span>
+              <span>há 3 anos</span>
+            </div><!--video-metadata-->
+          </div><!--video-details-->
+        </div><!--video-bottom-section-->  
+      </article><!--video-container-->
+
+      <article class="video-container">
+        <a href="https://youtu.be/ZNQ4BKA5JDg" class="thumbnail" data-duration="16:18">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/ZNQ4BKA5JDg/maxresdefault.jpg" alt="" />
+        </a>
+
+        <div class="video-bottom-section">
+          <a href="https://www.youtube.com/@QminutosQ"><img class="channel-icon" src="https://yt3.ggpht.com/ytc/AMLnZu8s4-0a8-AdqTPxShNKp8knsnKCRv0D9fbqpeMnwA=s88-c-k-c0x00ffffff-no-rj" alt="QminutosQ" /></a>
+
+          <div class="video-details">
+            <a href="https://youtu.be/ZNQ4BKA5JDg" class="video-title">5 CROSSOVER ÉPICOS DAS SÉRIES | SIMPSONS VS FAMILY GUY E...</a>
+            <a href="https://www.youtube.com/@QminutosQ" class="video-channel-name">QminutosQ</a>
+
+            <div class="video-metadata">
+              <span>25 mil visualizações</span>
+              <span>•</span>
+              <span>há 1 ano</span>
+            </div><!--video-metadata-->
+          </div><!--video-details-->
+        </div><!--video-bottom-section-->  
+      </article><!--video-container-->
+
+      <article class="video-container">
+        <a href="https://www.youtube.com/watch?v=fJmzY8CFSG0" class="thumbnail" data-duration="2:47">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/fJmzY8CFSG0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLClVQE6jC0Q7QORBJiiyN_cn-aqDw" alt="" />
+        </a>
+
+        <div class="video-bottom-section">
+          <a href="https://www.youtube.com/channel/UCCcn1f6IDJyXVNYoiYIGZFw"><img class="channel-icon" src="https://yt3.ggpht.com/XdYL2L3Regg0vYgu3iLilOWYP_xj02YVhlWziXGw0LtXmhA9eShhMSX1lPfq8d_fk8tJlsutQxE=s88-c-k-c0x00ffffff-no-rj" alt="video" /></a>
+
+          <div class="video-details">
+            <a href="https://www.youtube.com/watch?v=fJmzY8CFSG0" class="video-title">Journey - Separate Ways (Worlds Apart) (Bryce Miller/Alloy Tracks...</a>
+            <a href="https://www.youtube.com/channel/UCCcn1f6IDJyXVNYoiYIGZFw" class="video-channel-name">journey
+            </a>
+
+            <div class="video-metadata">
+              <span>3,1 mi de visualizações</span>
+              <span>•</span>
+              <span>há 7 meses</span>
+            </div><!--video-metadata-->
+          </div><!--video-details-->
+        </div><!--video-bottom-section-->  
+      </article><!--video-container-->
+
+      <article class="video-container">
+        <a href="https://youtu.be/2Vn466CpP1A" class="thumbnail" data-duration="2:44">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/2Vn466CpP1A/maxresdefault.jpg" alt="" />
+        </a>
+
+        <div class="video-bottom-section">
+          <a href="https://www.youtube.com/@SociedadedaVirtude"><img class="channel-icon" src="https://yt3.ggpht.com/ytc/AMLnZu_aXR78sTontvsy0AJVDIoJF-JFgK7UJDwrcIoSvQ=s88-c-k-c0x00ffffff-no-rj" alt="video" /></a>
+
+          <div class="video-details">
+            <a href="https://youtu.be/2Vn466CpP1A" class="video-title">O Arqueiro 2 (A luva soco) - Sociedade da Virtude</a>
+            <a href="https://www.youtube.com/@SociedadedaVirtude" class="video-channel-name">Sociedade da Virtude</a>
+
+            <div class="video-metadata">
+              <span>397 mil visualizações</span>
+              <span>•</span>
+              <span>há 4 anos</span>
+            </div><!--video-metadata-->
+          </div><!--video-details-->
+        </div><!--video-bottom-section-->  
+      </article><!--video-container-->
+
+      <article class="video-container">
+        <a href="https://youtu.be/oPAnPlBwK6E" class="thumbnail" data-duration="22:45">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/oPAnPlBwK6E/maxresdefault.jpg" alt="" />
+        </a>
+
+        <div class="video-bottom-section">
+          <a href="https://www.youtube.com/@BrasaodeArmas"><img class="channel-icon" src="https://yt3.ggpht.com/X4Pmt-Zm8H9P4KfFwoNtXEoks7Dop-VRL3IDTJfdaNpfa54OXdq2S6dbVI6S0FHzl7NICNambw=s88-c-k-c0x00ffffff-no-rj" alt="video" /></a>
+
+          <div class="video-details">
+            <a href="https://youtu.be/oPAnPlBwK6E" class="video-title">DESTRUINDO os MAIORES Mitos Espartanos!</a>
+            <a href="https://www.youtube.com/@BrasaodeArmas" class="video-channel-name">Brasão de Armas</a>
+
+            <div class="video-metadata">
+              <span>504 mil visualizações</span>
+              <span>•</span>
+              <span>há 5 meses</span>
+            </div><!--video-metadata-->
+          </div><!--video-details-->
+        </div><!--video-bottom-section-->  
+      </article><!--video-container-->
+    </section><!--video-section-->
+  </div><!--videos-->
+</body>
+</html>
