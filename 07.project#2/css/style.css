@@ -116,7 +116,7 @@ section.call {
 }
 
 section.call .container{
-  padding: 50px 0;
+  padding: 50px 2%;
   text-align: center;
   background-color: #ddd;
 }
@@ -174,7 +174,7 @@ section.call p {
 /********************************************************************************************/
 /*****************************/ /********** FEATURED **********/ /***************************/
 section.featured .container{
-  padding: 40px 0;
+  padding: 40px 2%;
   text-align: center;
   background-color: #ddd;
 }
@@ -192,7 +192,7 @@ section.featured p {
 /********************************************************************************************/
 /*****************************/ /********** FOOTER **********/ /*****************************/
 footer {
-  padding: 20px 0;
+  padding: 20px 2%;
   text-align: center;
 }
 
