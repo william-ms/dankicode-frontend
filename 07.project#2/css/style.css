@@ -214,7 +214,7 @@ footer .footer-logo {
 @media screen and (max-width: 960px) {
   .form-container {
     float: none;
-    width: 96%;
+    width: 90%;
     max-width: 400px;
     margin: 0 auto;
   }
@@ -223,7 +223,6 @@ footer .footer-logo {
     display: none;
   }
 }
-
 
 @media screen and (max-width: 510px) {
   .logo-1, .logo-2 {
