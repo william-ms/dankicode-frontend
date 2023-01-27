@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.center {
+  display: flex;
+}
+
+/***************/ /***** SIDEBAR *****/ /***************/
+
+.sidebar {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background-color: #1b88c7;
+}
+
+.sidebar-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sidebar-img {
+  text-align: center;
+}
+
+.sidebar-img img{
+  width: 80%;
+  border: 8px solid #1179b6;
+  border-radius: 50%;
+}
+
+.menu {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.menu a {
+  display: block;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0.4;
+}
+  .menu a:hover {
+    opacity: 1;
+  }
+  .menu a.selected {
+    opacity: 1;
+  }
+
+/***************/ /***** CONTENT *****/ /***************/
+.content {
+  position: absolute;
+  left: 20%;
+  width: 80%;
+  height: 100%;
+  padding: 0 2%;
+  overflow-y: auto;
+}
+
+.description {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.description h2 {
+  font-size: 46px;
+  color: #343a40;
+}
+
+.description h3 {
+  font-size: 26px;
+  color: #6c757d;
+}
+
+.description h2 > span,
+.description h3 > span {
+  color: #1b88c7;
+}
+
+.description p {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #6c757d;
+}
+
+.description .icons-social {
+  margin-top: 20px;
+}
+
+.icons-social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+  background-color: gray;
+  color: white;
+}
+  .icons-social a:hover {
+    background-color: #1b88c7;
+  }
+
+.icons-social i {
+  line-height: 40px;
+}
