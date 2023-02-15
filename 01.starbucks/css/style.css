@@ -107,17 +107,17 @@ main {
 
 .banner {
   width: 40%;
+  z-index: -1;
 }
 
 .banner .circle {
-  position: absolute;
-  background-color: #017143;
+  position: fixed;
+  background-color: #095736;
   right: -700px;
   bottom: -700px;
   width: 1400px;
   height: 1400px;
   border-radius: 50%;
-  z-index: -1;
 }
 
 .banner-content {
@@ -126,20 +126,83 @@ main {
 }
 
 .banner-img img{
-  position: relative;
-  left: 100px;
+  position: fixed;
+  right: 220px;
+  bottom: 50px;
   width: 400px;
 }
 
 .banner .social {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: 20px;
   top: 40%;
 }
 
 .banner .social img {
   width: 20px;
   margin: 10px;
+}
+
+/********************************************************************************************/
+/***************************/ /********** RESPONSIVE **********/ /***************************/
+
+@media screen and (max-width: 1080px) {
+  .about {
+    width: 80%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  header > .center{
+    justify-content: center;
+  }
+
+  header .menu {
+    padding: 0;
+  }
+
+  .menu a {
+    margin: 0 10px;
+  }
+
+  .about {
+    display: flex;
+    width: 80%;
+    padding: 0 10px;
+  }
+
+  .about h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .banner .circle {
+    right: -500px;
+    bottom: -500px;
+    width: 1000px;
+    height: 1000px;
+  }
+
+  .banner-img img{
+    right: 50px;
+    bottom: 50px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  html, body {
+    overflow-y: auto;
+  }
+
+  .banner-img {
+    display: none;
+  }
 }
