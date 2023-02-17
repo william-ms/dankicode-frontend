@@ -6,25 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube Clone</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" >
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
-    <a href="#"><img src="images/logo.png" alt="Youtube Logo" class="youtube-logo" /></a>
+    <div class="header-left">
+      <a href="#"><img src="images/logo.png" alt="Youtube Logo" class="youtube-logo" /></a>
 
-    <form class="search-bar">
-      <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
-      <button class="search-btn" type="submit">
-        <img src="images/magnify.svg" />
-      </button>
-    </form><!--search-bar-->
+      <form class="search-bar">
+        <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+        <button class="search-btn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form><!--search-bar-->
+    </div>
 
     <div class="menu-icons">
-      <a href="#"><img src="images/video-plus.svg" alt="Upload Video" /></a>
-      <a href="#"><img src="images/apps.svg" alt="Apps" /></a>
-      <a href="#"><img src="images/bell.svg" alt="Notificatios" /></a>
+      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a href="#"><i class="fa-solid fa-table-cells"></i></a>
+      <a href="#"><i class="fa-solid fa-bell"></i></a>
       <a href="#"><img class="menu-channel-icon" src="https://lh3.googleusercontent.com/a/AEdFTp6q_kYaiJCtjuV_0AB9yEVxXw4qNvqVhjLcUbxTRQ=s192-c-rg-br100" alt="Your Channel" /></a>
     </div><!--menu-icons-->
   </header>
@@ -117,7 +120,7 @@
         </a>
 
         <div class="video-bottom-section">
-          <a href="https://www.youtube.com/@OficialHungria"><img class="channel-icon" src="https://yt3.ggpht.com/aKcyRPYQ6fFEHtMVMbPvSpsvkw6MxbPGWkJLSdEK7uvp1XgY1uoI_wV46F2uNvnUXxGcSRD7=s88-c-k-c0x00ffffff-no-nd-rj" alt="video" /></a>
+          <a href="https://www.youtube.com/@OficialHungria"><img class="channel-icon" src="https://yt3.googleusercontent.com/eOnTl2y5_1H5oknn3lNjBa-7-lqH_lRMKkb2iJ30Qdy6vHmRLijoWQx9XuR9TI0uePoRNFHCxE0=s88-c-k-c0x00ffffff-no-rj" alt="video" /></a>
 
           <div class="video-details">
             <a href="https://youtu.be/r_cbh4-SOmI" class="video-title">Hungria Hip Hop - Um Pedido (Official Music Video)</a>
@@ -218,5 +221,7 @@
       </article><!--video-container-->
     </section><!--video-section-->
   </div><!--videos-->
+
+  <script src="js/fontawesome.min.js"></script>
 </body>
 </html>

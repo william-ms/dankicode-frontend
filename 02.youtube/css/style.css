@@ -12,8 +12,12 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem;
+}
+
+.header-left {
+  display: flex;
+  width: 100%;
 }
 
 .youtube-logo {
@@ -23,7 +27,9 @@ header {
 .search-bar {
   display: flex;
   flex-grow: 1;
-  margin: 0 2rem 0 4rem;
+  margin: 20px 2rem 0 2rem;
+  max-width: 800px;
+  height: 40px;
 }
 
 .search-input {
@@ -57,6 +63,14 @@ header {
   align-items: center;
   gap: 1.5rem;
 }
+
+.menu-icons a{
+  font-size: 20px;
+  color: #555;
+}
+  .menu-icons a:hover {
+    color: #111;
+  }
 
 .menu-channel-icon {
   border-radius: 50%;
@@ -209,4 +223,22 @@ header {
   background: none;
   color: #555;
   cursor: pointer;
+}
+
+/********************************************************************************************/
+/***************************/ /********** RESPONSIVE **********/ /***************************/
+@media screen and (max-width: 768px) {
+  .header-left {
+    flex-wrap: wrap;
+  }
+
+  .search-bar {
+    margin: 0;
+    margin-right: 2rem;
+    width: 100%;
+  }
+  
+  header .menu-icons{
+    height: 80px;
+  }
 }
