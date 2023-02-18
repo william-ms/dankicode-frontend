@@ -10,7 +10,7 @@ html, body {
 }
 
 .center {
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 2%;
 }
@@ -33,7 +33,7 @@ header {
   width: 120px;
 }
 
-form.form-login {
+.form-login {
   float: right;
 }
 
@@ -54,6 +54,7 @@ form.form-login {
 
 .form-element input[type="email"],
 .form-element input[type="password"] {
+  width: 100%;
   border: 0;
   outline: 0;
   margin-top: 4px;
@@ -77,16 +78,30 @@ form.form-login {
 section.main {
   background: linear-gradient(white, #D3D8E8);
   padding: 40px 0;
+  height: calc(100% - 70px);
 }
 
-.img-person {
+.banner {
   float: left;
-  width: 60%;
+  width: 50%;
+}
+
+.banner-text h3 {
+  font-size: 24px;
+}
+
+.banner-person {
+  width: 100%;
+  height: 200px;
+  background-image: url('../facebook-person.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .open-account {
-  float: left;
-  width: 40%;
+  float: right;
+  max-width: 400px;
 }
 
 .open-account h2 {
@@ -142,15 +157,93 @@ section.main {
   font-size: 19px;
 }
 
-.w100 h2 {
+/********************/
+/******* BIRTH ******/
+
+.birth-form h3 {
   margin-top: 10px;
-  font-size: 22px;
-  font-weight: normal;
+  font-weight: bold;
   color: #1d2129;
 }
 
-.form-open-account select {
+.birth-form a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #355596;
+}
+
+.birth-form select {
   float: left;
   border-radius: 0;
   margin-top: 10px;
+  height: 26px;
+}
+
+/********************/
+/****** GENDER ******/
+.gender-single {
+  float: left;
+  margin: 10px;
+}
+
+.gender-single input{
+  width: 20px;
+  height: 15px;
+}
+
+/********************/
+/***** REGISTER *****/
+.register-form p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.register-form a {
+  text-decoration: none;
+  color: #355596;
+}
+
+@media screen and (max-width: 900px) {
+  .banner {
+    display: none;
+  }
+
+  .open-account {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .logo {
+    float: none;
+    text-align: center;
+  }
+
+  .form-login {
+    float: none;
+    width: 100%;
+  }
+
+  .form-element {
+    float: none;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .form-element input {
+    width: 100%;
+  }
+
+  .form-element input[type="submit"] {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .w50 {
+    width: 100%;
+  }
 }
