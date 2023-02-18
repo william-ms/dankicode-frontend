@@ -126,7 +126,7 @@ header {
 
 .video-section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 3rem 1rem;
   padding: 3rem 0;
   margin: 0 1.5rem;
@@ -240,14 +240,5 @@ header {
   
   header .menu-icons{
     height: 80px;
-  }
-
-  .video-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 3rem 0;
-    padding: 3rem 0;
-    margin: 0 1.5rem;
-    border-top: 4px solid #ccc;
   }
 }
