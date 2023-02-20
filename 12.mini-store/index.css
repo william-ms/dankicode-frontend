@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+
+html, body {
+  height :100%;
+}
+
+.center {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/********************************************************************************************/
+/*****************************/ /********** HEADER **********/ /*****************************/
+header {
+  height: 80px;
+  background-color: #1b88c7;
+}
+
+header h1 {
+  line-height: 80px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+/********************************************************************************************/
+/****************************/ /********** PRODUCTS **********/ /****************************/
+.products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-single {
+  min-width: calc(100% / 5);
+  padding: 20px;
+}
+
+.product-img {
+  width: 100%;
+  height: 150px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-single p {
+  margin: 20px 0;
+}
+
+.product-single button {
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  background-color: #1b88c7;
+  border: 2px solid black;
+  color: white;
+  cursor: pointer;
+}
+  .product-single button:hover {
+    background-color: #1d70a0;
+  }
+
+/********************************************************************************************/
+/******************************/ /********** CART **********/ /******************************/
+
+.cart {
+  margin: 40px auto;
+  padding-bottom: 80px;
+}
+
+.cart h2 {
+  padding: 10px 30px;
+  border-top: 2px solid black;
+  font-size: 30px;
+}
+
+.cart-single {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #1b88c7;
+}
+
+/********************************************************************************************/
+/***************************/ /********** RESPONSIVE **********/ /***************************/
+@media screen and (max-width: 1080px) {
+  .product-single {
+    min-width: calc(100% / 4);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-single {
+    min-width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-single {
+    min-width: calc(100% / 2);
+  }
+}
