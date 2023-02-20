@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.clear {
+  clear: both;
+}
+
+/********************************************************************************************/
+/******************************/ /********** MAIN **********/ /******************************/
+main {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  padding: 15px 0;
+  background-image: url('../images/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+/********************************************************************************************/
+/*****************************/ /********** HEADER **********/ /*****************************/
+header {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.icons-social {
+  float: right;
+}
+
+.icons-social a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.logo {
+  float: left;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+/******************************/
+/********* MENU DESKTOP ********/
+.menu-desktop {
+  float: right;
+  margin-top: 20px;
+}
+
+.menu-desktop ul {
+  list-style-type: none;
+}
+
+.menu-desktop ul li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.menu-desktop ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/******************************/
+/********* MENU MOBILE ********/
+.menu-mobile {
+  display: none;
+  float: right;
+}
+
+.menu-mobile button {
+  position: relative;
+  top: 20px;
+  right: 10px;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-mobile ul {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  display: none;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  background-color: white;
+  z-index: 1;
+}
+
+.menu-mobile ul li{
+  padding: 20px 0;
+  border-bottom: 2px solid #444;
+}
+
+.menu-mobile ul li a {
+  text-decoration: none;
+  color: #444;
+}
+
+/********************************************************************************************/
+/****************************/ /********** CONTENT **********/ /*****************************/
+.main-content {
+  position :relative;
+  max-width: 700px;
+  margin: 110px 0;
+}
+
+.main-content h2 {
+  font-size: 44px;
+  font-weight: lighter;
+  color: white;
+}
+
+.main-content span {
+  color: #2692FF;
+}
+
+.main-content p {
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+}
+
+.main-content button {
+  width: 177px;
+  height: 44px;
+  margin-top: 18px;
+  background-color: #2692FF;
+  border: none;
+  border-radius: 20px;
+}
+
+.main-content a {
+  text-decoration: none;
+  color: white;
+}
+
+/********************************************************************************************/
+/******************************/ /********** PLANS **********/ /*****************************/
+.plans-call {
+  width: 100%;
+  padding: 27px 2%;
+  text-align: center;
+  background-color: rgb(220, 220, 220);
+}
+
+.plans-call h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: lighter;
+  border-top: 2px solid #2692FF;
+  color: #2692FF;
+}
+
+.plans-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.plans-single {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 10px 8px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+.plans-single h2 {
+  padding: 3px;
+  text-align: center;
+  font-weight: lighter;
+  background-color: #2692FF;
+  color: white;
+}
+
+.plans-services {
+  padding: 15px;
+  text-align: center;
+}
+
+.plans-services p {
+  margin-top: 8px;
+  font-size: 17px;
+  color: #777;
+}
+
+.plans-services i {
+  margin-right: 5px;
+}
+
+.plans-price {
+  margin-top: 10px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.plans-price p {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 24px;
+  background-color: transparent;
+  border-top: 1px solid #ccc;
+  color: #777;
+}
+
+/********************************************************************************************/
+/****************************/ /********** PARALLAX **********/ /****************************/
+.parallax {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  background-image: url('../images/bg_parallax.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.6);
+}
+
+.parallax .container {
+  position: relative;
+  max-width: 960px;
+  padding: 30px 2%;
+}
+
+.parallax h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+}
+
+.parallax span {
+  color: #2692FF;
+}
+
+.parallax p {
+  margin-top: 15px;
+  color: white;
+}
+
+/********************************************************************************************/
+/*****************************/ /********** CONTACT **********/ /****************************/
+.contact .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  width: 50%;
+  padding: 30px 20px 0 20px;
+}
+
+.contact-team {
+  width: 50%;
+  padding: 30px 20px 0 20px;
+}
+
+.contact h2 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #777;
+}
+
+.contact input:not([type="submit"]) {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.contact input[type="submit"] {
+  width: 100px;
+  height: 33px;
+  margin-top: 15px;
+  background-color: #2692FF;
+  border: 0;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer
+}
+
+/********************************************************************************************/
+/******************************/ /********** TEAM **********/ /******************************/
+.contact-team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.team-single {
+  width: 44%;
+  min-height: 260px;
+  margin-top: 10px;
+  margin-right: 3%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 10px 8px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+.team-single-user {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.team-single-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.team-single-name {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+  color: #777;
+}
+
+.team-single-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #999;
+}
+
+/********************************************************************************************/
+/*****************************/ /********** FOOTER **********/ /*****************************/
+footer {
+  width: 100%;
+  padding: 10px 2%;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+/********************************************************************************************/
+/***************************/ /********** RESPONSIVE **********/ /***************************/
+@media screen and (max-width: 900px) {
+  .plans-single {
+    width: 40%;
+  }
+
+  .team-single{
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .plans-single {
+    width: 80%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-team {
+    width: 100%;
+  }
+}
