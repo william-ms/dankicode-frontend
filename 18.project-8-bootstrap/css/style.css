@@ -1,0 +1,174 @@
+.custom-title {
+  position: relative;
+}
+
+.custom-title h2{
+  font-size: 25px;
+  color: #424242;
+}
+
+.custom-title div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 4px;
+  background: #ff80ab;
+}
+
+/********************************************************************************************/
+/*****************************/ /********** NAVBAR **********/ /*****************************/
+.navbar {
+  background-color: #ff4081;
+}
+
+.nav-link{
+  margin: 0 15px;
+}
+
+/********************************************************************************************/
+/******************************/ /********** MAIN **********/ /******************************/
+main{
+  position: relative;
+  top: 56px;
+  width: 100%;
+  min-height:500px;
+  background-image: url('https://wallpapers.com/images/featured/4lygqv03leitaipx.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(100, 100, 100, 0.4);
+}
+
+main .btn {
+  width: 200px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ff80ab;
+  border: 0;
+  color: white;
+}
+  main .btn:hover {
+    background-color: #ff4081;
+  }
+
+/********************************************************************************************/
+/******************************/ /********** CALL **********/ /******************************/
+.call{
+  height: 56px;
+  background: #ff80ab;
+}
+
+.call h2 {
+  font-size: 34px;
+  line-height: 56px;
+  color: white;
+}
+
+
+/********************************************************************************************/
+/******************************/ /********** ABOUT **********/ /*****************************/
+.about {
+  padding: 30px 0;
+  background-color: #fce4ec;
+}
+
+.about .btn {
+  background-color: #ff80ab;
+  border: 0;
+}
+  .about .btn:hover {
+    background-color: #ff4081;
+  }
+
+/********************************************************************************************/
+/**************************/ /********** DIFFERENTIALS **********/ /*************************/
+.differentials {
+  padding: 30px 0;
+  color: #646464;
+}
+
+/********************************************************************************************/
+/*****************************/ /********** INVITE **********/ /*****************************/
+.invite{
+  padding: 30px 0;
+  background-color: #ff80ab;
+}
+
+.invite h2{
+  font-size: 28px;
+  color: white;
+}
+
+.invite input[type=email]{
+  width: calc(100% - 140px);
+  height: 40px;
+  padding-left: 8px;
+  border: 0;
+  outline: 0;
+}
+
+.invite .btn {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  border: 0;
+  border-radius: 0;
+}
+
+/********************************************************************************************/
+/*****************************/ /********** CONTACT **********/ /****************************/
+.contact {
+  padding: 30px 0;
+}
+
+.contact .form-group {
+  margin: 10px 0;
+}
+
+.contact .btn {
+  width: 140px;
+  height: 40px;
+  margin: 10px 0;
+  background-color: #ff80ab;
+  border: 0;
+  color: white;
+}
+
+/********************************************************************************************/
+/*****************************/ /********** FOOTER **********/ /*****************************/
+footer{
+  padding-top: 14px;
+  background: #ff80ab;
+  color: white;
+}
+
+footer ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+footer > p{
+  padding: 10px 0;
+  text-align: center;
+  background-color: #ff4081;
+}
+
+footer li {
+  font-size: 18px;
+  color: white;
+}
+
+footer a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: white;
+}

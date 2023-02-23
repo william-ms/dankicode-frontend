@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Projeto #8 Bootstrap</title>
+  <link rel="stylesheet" href="css/fontawesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- # -- NAVBAR -- # -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">bgMoon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav col justify-content-end text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- # -- MAIN -- # -->
+  <main class="d-flex align-center" >
+    <div class="overlay"></div>
+
+    <div class="container position-relative text-white d-flex align-items-center ">
+      <div class="row justify-content-between">
+        <div class="col-md-6">
+            <h2>Seja muito bem-vindo(a)</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        </div>
+
+        <div class="col-md-5">
+          <h2>Inscreva-se para nossa lista</h2>
+
+          <form>
+            <div class="form-group">
+              <label for="email">Insira seu email</label>
+              <input id="email" type="email" class="form-control" placeholder="Email..." />
+            </div>
+                
+            <button type="submit" class="btn">cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- # -- CALL -- # -->
+  <section class="call">
+    <div class="container">
+      <h2 class="text-center"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></h2>
+    </div>
+  </section>
+
+  <!-- # -- ABOUT -- # -->
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="custom-title">
+            <div></div>
+            <h2>Sobre</h2>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit iaculis ante vel tempor. Maecenas convallis commodo eros quis varius. Suspendisse luctus vehicula sem, a malesuada mi fringilla id. Nulla laoreet vitae sapien a dignissim. Suspendisse vitae dapibus orci. Sed vitae suscipit ipsum. Phasellus malesuada erat et erat eleifend, id faucibus sem ultrices. Proin dignissim nibh lorem, nec consectetur velit euismod non. Integer co...</p>
+
+          <div class="text-center">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba mais!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="exampleModalLabel">Modal title</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit iaculis ante vel tempor. Maecenas convallis commodo eros quis varius. Suspendisse luctus vehicula sem, a malesuada mi fringilla id. Nulla laoreet vitae sapien a dignissim. Suspendisse vitae dapibus orci. Sed vitae suscipit ipsum. Phasellus malesuada erat et erat eleifend, id faucibus sem ultrices. Proin dignissim nibh lorem, nec consectetur velit euismod non. Integer consequat, purus sed ullamcorper scelerisque, diam turpis dapibus mi, eget mattis eros massa in quam. Sed nec ex ac magna tempor ultricies. Curabitur ut fermentum ex. Proin nec tempus nibh, non luctus nisi. Sed finibus aliquet ornare. Duis ullamcorper enim lobortis tortor sodales, vel posuere dolor fermentum. Donec sed orci eu lacus hendrerit fringilla.</p> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- # -- DIFFERENTIALS -- # -->
+  <section class="differentials">
+    <div class="container">
+      <div class="custom-title">
+        <div></div>
+        <h2>Nossos diferenciais</h2>
+      </div>
+
+      <div class="row py-3">
+        <div class="col-md-4 text-center">
+          <h2><i class="fa fa-user"></i></h2>
+          <p>elerisque, diam turpis dapibus mi, eget mattis eros massa in quam. Sed nec ex ac magna tempor ultricies. Curabitur ut fermentum ex. Proin nec tempus nibh, non luctus nisi. Sed finibus aliquet ornare. Duis ullamcorper enim lobortis tortor sodales, vel pos</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <h2><i class="fa-solid fa-bell"></i></h2>
+          <p>elerisque, diam turpis dapibus mi, eget mattis eros massa in quam. Sed nec ex ac magna tempor ultricies. Curabitur ut fermentum ex. Proin nec tempus nibh, non luctus nisi. Sed finibus aliquet ornare. Duis ullamcorper enim lobortis tortor sodales, vel pos</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <h2><i class="fa fa-coffee"></i></h2>
+          <p>elerisque, diam turpis dapibus mi, eget mattis eros massa in quam. Sed nec ex ac magna tempor ultricies. Curabitur ut fermentum ex. Proin nec tempus nibh, non luctus nisi. Sed finibus aliquet ornare. Duis ullamcorper enim lobortis tortor sodales, vel pos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- # -- INVITE -- # -->
+  <section class="invite">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <h2><i class="fa-solid fa-bell"></i> Participe da nossa lista!</h2>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <form>
+            <div class="form-group">
+              <input type="email" />
+              <button type="submit" class="btn btn-default align-top">Entrar!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- # -- CONTACT -- # -->
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="custom-title">
+            <div></div>
+            <h2>Fale conosco</h2>
+          </div>
+
+          <form>
+            <div class="form-group">
+              <label>Nome:</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>E-mail:</label>
+              <input type="email" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label>Sua mensagem:</label>
+              <textarea class="form-control"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-default">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- # -- FOOTER -- # -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-6">
+          <h2>Nossa história</h2>
+          <p>elerisque, diam turpis dapibus mi, eget mattis eros massa in quam. Sed nec ex ac magna tempor ultricies. Curabitur ut fermentum ex. Proin nec tempus nibh, non luctus nisi. Sed finibus aliquet ornare. Duis ullamcorper enim lobortis tortor sodales</p>
+        </div>
+
+        <div class="col-md-4">
+          <h2>Redes Socias</h2>
+            <ul>
+              <li><i class="fa-brands fa-instagram"></i><a href="">instagram</a></li>
+              <li><i class="fa-brands fa-facebook-f"></i><a href="">face_book</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin: 0;">Todos os direitos reservados</p>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/fontawesome.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
