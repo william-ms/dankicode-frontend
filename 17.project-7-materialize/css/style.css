@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.button-collapse {
+  font-size: 24px;
+}
+
+.main {
+  position: relative;
+  min-height: 400px;
+  background-image: url('https://t4.ftcdn.net/jpg/05/37/80/21/360_F_537802134_Oe7YStXmTLsJfIHDsfZyJ6K3lgMmOByV.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main .container {
+  position: relative;
+}
+
+.main h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid white !important;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 15px 2%;
+}
+
+.custom-title {
+  position: relative;
+}
+
+.custom-title div {
+  position: absolute;
+  top: 44px;
+  width: 98%;
+  border-bottom: 3px solid #424242 ;
+  z-index: 1;
+
+}
+
+.custom-title h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 2%;
+  font-size: 30px;
+  background-color: white;
+  color: #424242 ;
+  z-index: 2;
+}
